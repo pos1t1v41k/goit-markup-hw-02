@@ -54,18 +54,19 @@ text-decoration: none;
    color: #ffffff;
 }
 /*кнопка webstudio*/
-.text-button{
+.text-titli-button{
    font-weight: 700;
    font-size: 16px;
    line-height: 30px;
    color: #ffffff;
 }
-.button{
+.button-title{
    width: 200px;
    height: 50px;
    background: #2196F3;
    box-shadow: 0px 4px 4px rgba(0,0,0,0,15);
    border-radius: 4px;
+   border-style: none;
 }
 
 .background-gray {
@@ -121,4 +122,45 @@ text-decoration: none;
    line-height: 24px;
    color: #ffffff;
    font-style: normal;
+}
+/*кнопки сервисов*/
+.button-service{
+background: #F5F4FA;
+border-radius: 4px;
+border-style: none;
+}
+
+.buttons-text-service{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #212121;
+}
+.white-text .buttons-text-service:hover, .buttons-text-service:focus {
+   color: #ffffff;
+}
+.link-battons .button-service:hover, .button-service:focus{
+background: #2196F3;
+box-shadow: 0px 3px 1px rgba(0,0,0,0,1), 0px 1px 2px rgba(0,0,0,0,0.08), 0px 2px 2px rgba(0,0,0,0,0.12);
+border-radius: 4px;
+}
+/*каталог*/
+.catalog-heading{
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.06em;
+color: #212121;
+}
+.catalog-text{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 00.03em;
+color: #757575;
 }

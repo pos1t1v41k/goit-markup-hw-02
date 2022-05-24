@@ -1,10 +1,25 @@
-.text-body {
-   font-family: 'Roboto', sans-serif;
+/*основные настройки*/
+:root {
+   --primary-text-color: #757575;
+   --title-text-color: #212121;
+   --accent-color: #2196F3;
+   --primary-white-color: #FFFFFF;
+   --primary-bg-color: #FFFFFF;
+   --secondary-bg-color: #2F303A;
+   --secondary-white-color: #F5F4FA;
 }
+
+.body {
+   background-color: var(--primary-bg-color);
+   color: var(--primary-text-color);
+   font-family: 'Roboto', 'sans-serif';
+   font-size: 14px;
+   letter-spacing: 0.03em;
+}
+
+
 /* block header */
-.background-white {
-   background-color: #ffffff;
-}
+
 .text-logo {
    font-family: 'Raleway', sans-serif;
    font-weight: 700;
@@ -13,12 +28,15 @@
    color: #2196F3;
    text-decoration: none;
 }
+
 .Part-logo-black {
    color: #212121;
 }
+
 .Part-logo-white {
    color: aliceblue;
 }
+
 /*навигация*/
 .link {
    font-size: 14px;
@@ -28,10 +46,12 @@
    color: #212121;
 }
 
-.link-navigation .link:hover, link:focus {
+.link-navigation .link:hover,
+link:focus {
    color: #2196F3;
-   
+
 }
+
 /*контакты*/
 .connection {
    font-style: normal;
@@ -41,78 +61,128 @@
    color: #757575;
    text-decoration: none;
 }
-.connektion-wrapper .connection:hover, .connection:focus {
+
+.connektion-wrapper .connection:hover,
+.connection:focus {
    color: #2196F3;
 }
+
 .connect-link {
-text-decoration: none;
-}
-/*контакты подвал*/
-.connection-footer {
-   font-style: normal;
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 24px;
-   color: rgba(255, 255, 255, 0.6);
    text-decoration: none;
 }
+
+
+
 /* block main */
-.Title {
+.title {
+   color: var(--primary-white-color);
+   font-family: 'Roboto';
+   font-style: normal;
    font-weight: 900;
    font-size: 44px;
-   color: #ffffff;
+   line-height: 1.35;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
 }
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
 /*кнопка webstudio*/
-.text-titli-button{
+
+.link-button {
+   text-decoration: none;
+}
+
+.button-title {
+   color: var(--primary-white-color);
+   background-color: var(--accent-color);
+   cursor: pointer;
+   font-family: 'Roboto';
+   font-style: normal;
    font-weight: 700;
    font-size: 16px;
-   line-height: 30px;
-   color: #ffffff;
+   line-height: 1.85;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
 }
-.button-title{
-   width: 200px;
-   height: 50px;
-   background: #2196F3;
-   box-shadow: 0px 4px 4px rgba(0,0,0,0,15);
-   border-radius: 4px;
-   border-style: none;
+
+.button-title:hover,
+.button-title:focus {
+   color: var(--primary-white-color);
+   background-color: #0469bb;
+   ;
 }
 
 .background-gray {
    background-color: #2F303A;
 
 }
+
+.features {
+   background-color: var(--primary-bg-color);
+}
+
 /*Наши преимущества*/
 .text-title {
-   font-size: 14px;
+   color: var(--title-text-color);
+   font-family: 'Roboto';
+   font-style: normal;
    font-weight: 700;
-   line-height: 16.41px;
-   color: #212121;
-}
-.Text-description {
-   font-weight: 400;
    font-size: 14px;
-   line-height: 24px;
-   color: #757575;
+   line-height: 1.15;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
 }
+
+.Text-description {
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+}
+
 /*чем занимаемся и наша команда*/
+.exercise {
+   background-color: var(--primary-bg-color);
+}
+
 .title-exercise {
+   font-family: 'Roboto';
+   font-style: normal;
+   color: var(--title-text-color);
    font-weight: 700;
    font-size: 36px;
-   line-height: 42.19px;
-   color: #212121;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
-.initials{
+
+.initials {
+   color: var(--title-text-color);
+   font-family: 'Roboto';
+   font-style: normal;
    font-weight: 500;
    font-size: 16px;
-   line-height: 18.75px;
-   color: #212121;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
-.position{
-   font-weight: 400;
+
+.position {
    font-size: 16px;
-   line-height: 18.75px;
-   color: #757575;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
 
 .Our-command {
@@ -123,6 +193,7 @@ text-decoration: none;
 .background-footer {
    background-color: #2F303A;
 }
+
 .map {
    font-weight: 400;
    font-size: 14px;
@@ -130,44 +201,58 @@ text-decoration: none;
    color: #ffffff;
    font-style: normal;
 }
-/*кнопки сервисов*/
-.button-service{
-background: #F5F4FA;
-border-radius: 4px;
-border-style: none;
-}
 
-.buttons-text-service{
+/*кнопки сервисов*/
+.button-service {
+   color: var(--title-text-color);
+   background-color: var(--secondary-white-color);
+   font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
    font-size: 16px;
-   line-height: 26px;
-   text-align: center;
+   line-height: 1.6;
    letter-spacing: 0.03em;
+   cursor: pointer;
+}
+
+.button-service:hover,
+.button-service:focus {
+   color: var(--primary-white-color);
+   background-color: var(--accent-color);
+}
+
+/*каталог*/
+.catalog-heading {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 36px;
+   letter-spacing: 0.06em;
    color: #212121;
 }
-.white-text .buttons-text-service:hover, .buttons-text-service:focus {
-   color: #ffffff;
+
+.catalog-text {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 30px;
+   letter-spacing: 00.03em;
+   color: #757575;
 }
-.link-battons .button-service:hover, .button-service:focus{
-background: #2196F3;
-box-shadow: 0px 3px 1px rgba(0,0,0,0,1), 0px 1px 2px rgba(0,0,0,0,0.08), 0px 2px 2px rgba(0,0,0,0,0.12);
-border-radius: 4px;
+
+/*контакты подвал*/
+.connection-footer {
+   font-style: normal;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 24px;
+   color: rgba(255, 255, 255, 0.6);
+   text-decoration: none;
 }
-/*каталог*/
-.catalog-heading{
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 36px;
-letter-spacing: 0.06em;
-color: #212121;
-}
-.catalog-text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-letter-spacing: 00.03em;
-color: #757575;
+
+.connection-footer-wrapper .connection-footer:hover,
+.connection-footer:focus,
+.map:hover,
+.map:focus {
+   color: #2196F3;
 }

@@ -122,6 +122,8 @@ link:focus {
    align-items: center;
    text-align: center;
    letter-spacing: 0.06em;
+   border-radius: 4px;
+
 }
 
 .button-title:hover,
@@ -209,6 +211,7 @@ link:focus {
    line-height: 1.6;
    letter-spacing: 0.03em;
    cursor: pointer;
+   border-radius: 4px;
 }
 
 .button-service:hover,

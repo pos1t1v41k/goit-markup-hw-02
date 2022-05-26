@@ -49,28 +49,33 @@
 .link-navigation .link:hover,
 link:focus {
    color: #2196F3;
+}
 
+.current {
+   color: var(--accent-color);
+   text-decoration: none;
 }
 
 /*контакты*/
-.connection {
-   font-style: normal;
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 16px;
-   color: #757575;
-   text-decoration: none;
-}
 
-.connektion-wrapper .connection:hover,
-.connection:focus {
-   color: #2196F3;
-}
 
+
+
+.connektion-header,
 .connect-link {
+   font-family: 'Roboto';
+   color: var(--primary-text-color);
    text-decoration: none;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
 }
 
+.connektion-header .connect-link:hover,
+.connektion-header .connect-link:focus {
+   color: var(--accent-color);
+}
 
 
 /* block main */
@@ -92,7 +97,6 @@ link:focus {
    margin: -1px;
    border: 0;
    padding: 0;
-
    white-space: nowrap;
    clip-path: inset(100%);
    clip: rect(0 0 0 0);
@@ -194,14 +198,6 @@ link:focus {
    background-color: #2F303A;
 }
 
-.map {
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 24px;
-   color: #ffffff;
-   font-style: normal;
-}
-
 /*кнопки сервисов*/
 .button-service {
    color: var(--title-text-color);
@@ -223,36 +219,54 @@ link:focus {
 
 /*каталог*/
 .catalog-heading {
+   color: var(--title-text-color);
+   font-family: 'Roboto';
    font-style: normal;
    font-weight: 700;
    font-size: 18px;
-   line-height: 36px;
+   line-height: 2;
    letter-spacing: 0.06em;
-   color: #212121;
 }
 
 .catalog-text {
-   font-style: normal;
-   font-weight: 400;
    font-size: 16px;
-   line-height: 30px;
-   letter-spacing: 00.03em;
-   color: #757575;
+   line-height: 1.85;
+   letter-spacing: 0.03em;
 }
 
 /*контакты подвал*/
-.connection-footer {
-   font-style: normal;
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 24px;
-   color: rgba(255, 255, 255, 0.6);
+.adres-footer {
+   color: var(--primary-white-color);
    text-decoration: none;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
 }
 
-.connection-footer-wrapper .connection-footer:hover,
-.connection-footer:focus,
-.map:hover,
-.map:focus {
-   color: #2196F3;
+.adres-footer:hover,
+.adres-footer:focus {
+   color: var(--accent-color);
+}
+
+.connect-footer {
+   color: rgba(255, 255, 255, 0.6);
+   text-decoration: none;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+
+}
+
+.connect-footer:hover,
+.connect-footer:focus {
+   color: var(--accent-color);
+}
+
+.list-style {
+   list-style: none
 }
